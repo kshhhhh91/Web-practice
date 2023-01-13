@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&family=Nunito:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: rgba(185, 243, 255, 0.5);
+}
+
+.font__kor {
+  font-family: "Jua", sans-serif;
+}
+
+.window {
+  width: 350px;
+  height: 750px;
+  margin: 65px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 3px 2px 2px 1px rgba(0, 0, 0, 0.02),
+    -2px -3px 2px 1px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.status-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 25px 0px 25px;
+}
+
+.artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artist__avatar {
+  width: 85px;
+  height: 85px;
+  margin: 20px 0 40px 0;
+  border-radius: 50%;
+  box-shadow: 5px 3px 15px 5px #a4d2ff, -3px -5px 15px 5px #a4d2ff;
+}
+
+.artist__text {
+  text-align: center;
+  line-height: 40px;
+}
+
+.artist__title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.artist__subtitle {
+  opacity: 0.5;
+  font-weight: 700;
+}
+
+.artist__btn {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.artist__shuffle {
+  width: 120px;
+  height: 45px;
+  background-color: rgb(50, 50, 50);
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  border-radius: 50px;
+  box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 0.02),
+    -2px -3px 5px 1px rgba(0, 0, 0, 0.02);
+  margin-right: 10px;
+}
+
+.artist__like {
+  width: 120px;
+  height: 45px;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  border-radius: 50px;
+  box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 0.02),
+    -2px -3px 5px 1px rgba(0, 0, 0, 0.02);
+}
+
+.artist__like i {
+  color: rgb(50, 50, 50);
+}
+
+.songlist {
+  width: 320px;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.songlist__song {
+  width: 100%;
+  height: 80px;
+  border-radius: 20px;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+}
+
+.songlist__cover {
+  width: 48px;
+  height: 48px;
+  border-radius: 20%;
+}
+
+.songlist__text {
+  width: 200px;
+  line-height: 25px;
+  margin-left: 20px;
+}
+
+.songlist__artist {
+  font-size: 14px;
+  font-weight: 700;
+  opacity: 0.6;
+}
+
+.songlist__song i {
+  opacity: 0.6;
+}
+
+.songlist__playing {
+  box-shadow: 3px 2px 1px 3px rgba(0, 0, 0, 0.03),
+    -2px -3px 5px 1px rgba(0, 0, 0, 0.03);
+}
+
+.ctrlbox {
+  position: absolute;
+  bottom: 15px;
+  width: 320px;
+  height: 65px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(50, 50, 50);
+  color: rgba(255, 255, 255, 0.9);
+  box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 0.02),
+    -2px -3px 5px 1px rgba(0, 0, 0, 0.02);
+}
+
+.ctrlbox__text {
+  line-height: 25px;
+  padding-left: 10px;
+}
+
+.ctrlbox__artist {
+  font-size: 14px;
+  opacity: 0.4;
+}
+
+.ctrlbox__icons {
+  padding-right: 10px;
+}
+
+.ctrlbox__icons i {
+  margin-left: 20px;
+}
+
+.playing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.playing-song__cover {
+  width: 265px;
+  height: 265px;
+  margin-top: 75px;
+  margin-bottom: 65px;
+  border-radius: 8%;
+  box-shadow: 0 10px 30px 3px rgb(255, 205, 69);
+}
+
+.playing-song__text {
+  text-align: center;
+  line-height: 35px;
+}
+
+.playing-song__title {
+  font-size: 24px;
+}
+
+.playing-song__subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+.playing-time {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.playing-time__num {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  opacity: 0.3;
+  margin-bottom: 10px;
+}
+
+.playing-time__bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.playing-time__bar-main {
+  width: 66%;
+  height: 4px;
+  background-color: rgb(50, 50, 50);
+  border-radius: 30px;
+}
+
+.playing-time__bar-dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(50, 50, 50);
+  border-radius: 50%;
+  margin: 0;
+  position: absolute;
+  left: 65%;
+}
+
+.playing-time__bar-last {
+  width: 34%;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
+.playing__ctrlbox {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.playing__ctrlbox .fa-sm {
+  opacity: 0.3;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/40a2d4bd7e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="window">
+      <div class="status-bar">
+        <i class="fa-solid fa-arrow-left"></i>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </div>
+
+      <div class="playing">
+        <div class="playing-song">
+          <img
+            src="https://cdnimg.melon.co.kr/cm/album/images/000/05/288/5288_500.jpg/melon/resize/282/quality/80/optimize"
+            class="playing-song__cover"
+          />
+          <div class="playing-song__text">
+            <h1 class="playing-song__title font__kor">사랑해 그리고 기억해</h1>
+            <h3 class="playing-song__subtitle">god</h3>
+          </div>
+        </div>
+
+        <div class="playing-time">
+          <div class="playing-time__num">
+            <span>2:58</span>
+            <span>4:23</span>
+          </div>
+          <div class="playing-time__bar">
+            <div class="playing-time__bar-main"></div>
+            <div class="playing-time__bar-dot"></div>
+            <div class="playing-time__bar-last"></div>
+          </div>
+        </div>
+
+        <div class="playing__ctrlbox">
+          <i class="fa-solid fa-repeat fa-sm"></i>
+          <i class="fa-solid fa-backward-step fa-lg"></i>
+          <i class="fa-solid fa-circle-play fa-3x"></i>
+          <i class="fa-solid fa-forward-step fa-lg"></i>
+          <i class="fa-solid fa-shuffle fa-sm"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
