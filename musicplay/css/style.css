@@ -9,6 +9,11 @@ body {
   background-color: rgba(185, 243, 255, 0.5);
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .font__kor {
   font-family: "Jua", sans-serif;
 }
